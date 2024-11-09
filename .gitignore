@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+/.swc
 
 # next.js
 /.next/
@@ -40,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .pnpm-store
+
+/public/models
+
