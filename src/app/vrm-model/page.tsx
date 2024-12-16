@@ -49,15 +49,13 @@ function VRMModel() {
 export default function Page() {
   return (
     <div style={{ width: "100%", height: "100vh" }}>
-      <Suspense fallback={<h1>Loading...</h1>}>
-        <Canvas>
-          <ambientLight intensity={0.5} />
-          
-            <VRMModel />
-          
-          <OrbitControls />
-        </Canvas>
-      </Suspense>
+      <Canvas>
+        <ambientLight intensity={0.5} />
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <VRMModel />
+        </Suspense>
+        <OrbitControls />
+      </Canvas>
     </div>
   );
 }
