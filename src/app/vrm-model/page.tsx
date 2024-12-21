@@ -53,8 +53,8 @@ export default function Page() {
         <ambientLight intensity={0.5} />
         <Suspense fallback={<h1>Loading...</h1>}>
           <VRMModel />
+          <OrbitControls />
         </Suspense>
-        <OrbitControls />
       </Canvas>
     </div>
   );
